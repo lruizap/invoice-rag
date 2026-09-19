@@ -1,5 +1,12 @@
 # Extracto
 
+[![Tests](https://github.com/lruizap/invoice-rag/actions/workflows/test.yml/badge.svg)](https://github.com/lruizap/invoice-rag/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-000000?logo=ollama&logoColor=white)](https://ollama.com)
+[![pgvector](https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
+
 App Next.js que permite:
 
 1. Subir una imagen o un PDF y previsualizarlo.
@@ -94,3 +101,7 @@ Usa [Vitest](https://vitest.dev) para probar, sin necesidad de Docker ni de Olla
 - `src/lib/db.ts` — pool de conexión a PostgreSQL (`pg`).
 - `docker-compose.yml` — servicio `pgvector/pgvector:pg16`.
 - `db/init.sql` — extensión `vector`, tabla `documents` (con `embedding VECTOR(768)` e índice `hnsw`) y tablas `facturas`/`factura_items`, `recibos`, `contratos`/`contrato_partes`/`contrato_clausulas`, `desconocidos`.
+
+## Licencia
+
+[MIT](LICENSE)
